@@ -26,3 +26,12 @@ pip install pandas
 | credit_history | `Yes` or `No` |
 | property_area | `Rural` or `Urban` or `Semiurban`|
 
+## /api response
+
+| Value | Meaning |
+| :---: | :---: |
+| yes | อนุมัติการกู้ |
+| No | ปฏิเสธการกู้ |
+
+## example call
+https://loan-predict.herokuapp.com/api?gender=Male&married=Yes&dependents=0&education=Graduate&self_employed=Yes&applicantIncome=3000&coapplicantIncome=0&loanAmount=66&loan_amount_term=360&credit_history=Yes&property_area=Urban
