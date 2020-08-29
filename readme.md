@@ -21,7 +21,7 @@ pip install pandas
 | self_employed | `Yes` or `No` |
 | applicantIncome | integer greater than or equal 0 |
 | coapplicantIncome | integer greater than or equal 0 |
-| loanAmount | integer greater than or equal 0 |
+| loanAmount | integer between 0 - 599 |
 | loan_amount_term | integer greater than or equal 0 |
 | credit_history | `Yes` or `No` |
 | property_area | `Rural` or `Urban` or `Semiurban`|
