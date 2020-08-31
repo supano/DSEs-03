@@ -19,9 +19,9 @@ pip install pandas
 | dependents | `0` or `1` or `2` or `3+` (มีผู้ที่อยู่ในอุปการะกี่คน)|
 | education | `Graduate` or `Not Graduate` (ระดับการศึกษา)|
 | self_employed | `Yes` or `No` (เป็นเจ้าของธุรกิจหรือไม่)|
-| applicantIncome | integer greater than or equal 0 (รายได้ของผู้ขอสินเชื่อ หน่วยเป็น USD / Month)|
-| coapplicantIncome | integer greater than or equal 0 (รายได้ผู้ค้ำประกัน หน่วยเป็น USD / Month)|
-| loanAmount | integer between 0 - 599 (วงเงินสินเชื่อ หน่วยเป็น USD)|
+| applicant_income | integer greater than or equal 0 (รายได้ของผู้ขอสินเชื่อ หน่วยเป็น USD / Month)|
+| coapplicant_income | integer greater than or equal 0 (รายได้ผู้ค้ำประกัน หน่วยเป็น USD / Month)|
+| loan_amount | integer between 0 - 599 (วงเงินสินเชื่อ 1 หน่วยเท่ากับ 1,000 USD)|
 | loan_amount_term | integer greater than or equal 0 (ระยะเวลาของสินเชื่อหน่วยเป็นเดือน)|
 | credit_history | `Yes` or `No` (มีประวัติการกู้ยืมหรือไม่)|
 | property_area | `Rural` or `Urban` or `Semiurban` (ทรัพย์สินอยู่บริเวณไหน `ชนบท` หรือ `ในเมือง` หรือ `กึ่งชนบทกึ่งเมือง`)|
