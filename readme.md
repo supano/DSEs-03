@@ -36,3 +36,6 @@ pip install pandas
 # Example
  - https://loan-predict.herokuapp.com/api
  - https://loan-predict.herokuapp.com/api?gender=Male&married=Yes&dependents=0&education=Graduate&self_employed=Yes&applicant_income=3000&coapplicant_income=0&loan_amount=66&loan_amount_term=360&credit_history=Yes&property_area=Urban
+
+# GUI by Botnoi
+ - https://openapi.botnoi.ai/dashboard/myapi/sa-loan-predict
