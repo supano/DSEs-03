@@ -17,7 +17,7 @@ pip install pandas
 | gender | `Male` or `Female` (เพศ `ชาย` หรือ `หญิง`) |
 | married | `Yes` or `No` (แต่งงานแล้วหรือยัง)|
 | dependents | `0` or `1` or `2` or `3+` (มีผู้ที่อยู่ในอุปการะกี่คน)|
-| education | `Graduate` or `Not Graduate` (ระดับการศึกษา)|
+| education | `Graduate` or `Not Graduate` (ระดับการศึกษา `สำเร็จการศึกษาระดับปริญาตรีแล้ว` หรือ `ยังไม่สำเร็จการศึกษา`)|
 | self_employed | `Yes` or `No` (เป็นเจ้าของธุรกิจหรือไม่)|
 | applicant_income | integer greater than or equal 0 (รายได้ของผู้ขอสินเชื่อ หน่วยเป็น USD / Month)|
 | coapplicant_income | integer greater than or equal 0 (รายได้ผู้ค้ำประกัน หน่วยเป็น USD / Month)|
