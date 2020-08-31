@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-modFile = './models/loan_predict.p'
+modFile = './models/loan_predict_2020_08_31.p'
 model = pickle.load(open(modFile,'rb'))
 def predict(gender,	married, dependents,	education,	self_employed,	applicantIncome,	coapplicantIncome,	loanAmount,	loan_amount_term,	credit_history,	property_area):
   pd_columns_head = ['Loan_ID',	'Gender', 'Married', 'Dependents', 'Education',	'Self_Employed', 'ApplicantIncome',	'CoapplicantIncome',	'LoanAmount',	'Loan_Amount_Term',	'Credit_History', 'Property_Area', 'Loan_Status']
@@ -193,9 +193,9 @@ def predict(gender,	married, dependents,	education,	self_employed,	applicantInco
 
   result = model.predict(sorted_df)[0]
   if result == 1:
-    result = "Yes"
+    result = "Approve"
   else:
-    result = "No"
+    result = "Reject"
 
   return result
 

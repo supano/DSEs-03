@@ -52,31 +52,31 @@ def api():
     else:
         return "Error: No self_employed field provided. Please specify self_employed."
 
-    if 'applicantIncome' in fl_requests.args:
-        applicantIncome = int(fl_requests.args['applicantIncome'])
+    if 'applicant_income' in fl_requests.args:
+        applicantIncome = int(fl_requests.args['applicant_income'])
         if applicantIncome < 0:
-            return "Error: applicantIncome must be greater than or equal 0 but got "+  fl_requests.args['applicantIncome']
+            return "Error: applicant_income must be greater than or equal 0 but got "+  fl_requests.args['applicant_income']
     else:
-        return "Error: No applicantIncome field provided. Please specify applicantIncome."
+        return "Error: No applicant_income field provided. Please specify applicant_income."
 
-    if 'coapplicantIncome' in fl_requests.args:
-        coapplicantIncome = int(fl_requests.args['coapplicantIncome'])
+    if 'coapplicant_income' in fl_requests.args:
+        coapplicantIncome = int(fl_requests.args['coapplicant_income'])
         if coapplicantIncome < 0:
-            return "Error: coapplicantIncome must be greater than or equal 0 but got "+  fl_requests.args['coapplicantIncome']
+            return "Error: coapplicant_income must be greater than or equal 0 but got "+  fl_requests.args['coapplicant_income']
     else:
-        return "Error: No coapplicantIncome field provided. Please specify coapplicantIncome."
+        return "Error: No coapplicant_income field provided. Please specify coapplicant_income."
 
-    if 'loanAmount' in fl_requests.args:
-        loanAmount = int(fl_requests.args['loanAmount'])
-        if loanAmount < 0 or loanAmount >= 600:
-            return "Error: loanAmount must be between 0 - 599 but got " + fl_requests.args['loanAmount']
+    if 'loan_amount' in fl_requests.args:
+        loanAmount = int(fl_requests.args['loan_amount'])
+        if loanAmount < 0:
+            return "Error: loan_amount must be greater than or equal 0 but got " + fl_requests.args['loan_amount']
     else:
-        return "Error: No loanAmount field provided. Please specify loanAmount."
+        return "Error: No loan_amount field provided. Please specify loan_amount."
 
     if 'loan_amount_term' in fl_requests.args:
         loan_amount_term = int(fl_requests.args['loan_amount_term'])
-        if loan_amount_term < 0:
-            return "Error: loan_amount_term must be greater than or equal 0 but got "+  fl_requests.args['loan_amount_term']
+        if loan_amount_term < 0 or loan_amount_term >= 600:
+            return "Error: loan_amount_term must be between 0 - 599 "+  fl_requests.args['loan_amount_term']
     else:
         return "Error: No loan_amount_term field provided. Please specify loan_amount_term."
 
