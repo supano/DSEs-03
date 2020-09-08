@@ -197,7 +197,7 @@ def predict(gender,	married, dependents,	education,	self_employed,	applicantInco
   else:
     result = "Reject"
 
-  return result
+  return {"result": result}
 
 
 def extract_feature(df):
