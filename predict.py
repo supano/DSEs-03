@@ -19,8 +19,11 @@ def predict(gender,	married, dependents,	education,	self_employed,	applicantInco
 
   print("clean data success")
   print(pd_clean_df)
-
-  pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']/(pd_clean_df['ApplicantIncome']+pd_clean_df['CoapplicantIncome'])
+  
+  if pd_clean_df['ApplicantIncome']+pd_clean_df['CoapplicantIncome'] == 0:
+      pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']
+  else:
+      pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']/(pd_clean_df['ApplicantIncome']+pd_clean_df['CoapplicantIncome'])
 
   pd_feat, pd_temp = extract_feature(pd_clean_df)
   print("extract feature success")
