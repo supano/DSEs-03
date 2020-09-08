@@ -21,7 +21,7 @@ def predict(gender,	married, dependents,	education,	self_employed,	applicantInco
   print(pd_clean_df)
   
   if pd_clean_df['ApplicantIncome'] == 0 and pd_clean_df['CoapplicantIncome'] == 0:
-      pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']
+      pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']/1
   else:
       pd_clean_df['DebtRatio'] = pd_clean_df['LoanAmount']/(pd_clean_df['ApplicantIncome']+pd_clean_df['CoapplicantIncome'])
 
