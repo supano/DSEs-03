@@ -141,22 +141,6 @@ def predict(gender,	married, dependents,	education,	self_employed,	applicantInco
   # elif pd_feat['Loan_Amount_Term'][0] >= 600:
     # Loan_Amount_Term_GROUP_600_up = 1 // TODO train model to use 600 up
 
-  # order_args = ['DebtRatio', 'Gender_0.0', 'Gender_1.0', 'Married_0.0',
-  #      'Married_1.0', 'Dependents_0.0', 'Dependents_1.0',
-  #      'Dependents_2.0', 'Dependents_3.0', 'Education_0', 'Education_1',
-  #      'Self_Employed_0.0', 'Self_Employed_1.0', 'Credit_History_0.0',
-  #      'Credit_History_1.0', 'Property_Area_0', 'Property_Area_1',
-  #      'Property_Area_2', 'ApplicantIncome_GROUP_2000_3999',
-  #      'ApplicantIncome_GROUP_4000_5999', 'ApplicantIncome_GROUP_6000_up',
-  #      'ApplicantIncome_GROUP_Below_2000',
-  #      'CoapplicantIncome_GROUP_2000_3999',
-  #      'CoapplicantIncome_GROUP_4000_5999',
-  #      'CoapplicantIncome_GROUP_6000_up',
-  #      'CoapplicantIncome_GROUP_Below_2000', 'LoanAmount_GROUP_200_399',
-  #      'LoanAmount_GROUP_400_599', 'LoanAmount_GROUP_600_up',
-  #      'LoanAmount_GROUP_Below_200', 'Loan_Amount_Term_GROUP_200_399',
-  #      'Loan_Amount_Term_GROUP_400_599',
-  #      'Loan_Amount_Term_GROUP_Below_200']
   sorted_df = pd.DataFrame([[
     pd_feat['DebtRatio'][0],
     Gender_0,
